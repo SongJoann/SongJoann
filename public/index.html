@@ -1,43 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <!-- General meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    
+
+    
+      <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Welcome | My website</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Welcome to my website" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is my new website" />
+<meta property="og:description" content="This is my new website" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="My website" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","src":"headphones.jpg?s=52"}},"headline":"Welcome to my website","name":"My website","description":"This is my new website","@type":"WebSite","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+    
+
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#242e2b"/>
+
+    
+      <link rel="stylesheet" href="/assets/styles.css">
+
+      <style>
+        .main_container {
+          position: center;
+          margin-left: auto;
+          margin-bottom: 10px;
+          width: 750 px;
+        }
+        </style>
+
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <body class="layout-page  welcome-to-my-website">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <header class="header">
+
+  <div class="container">
+    <a class="logo" href="/">
+  <img src="/assets/headphones.jpg" width="75px" height="75px" alt="Song"/>
+</a>
+
+
+    
+<nav class="nav  nav--header">
+  <ul class="list  list--nav">
+    
+
+      <li class="item  item--nav  item--current">
+        <a href="/">Home</a>
+      </li>
+    
+
+      <li class="item  item--nav">
+        <a href="/about/">About</a>
+      </li>
+      
+
+      <li class="item  item--nav">
+        <a href="/IDSN/">IDSN</a>
+      </li>
+    
+  </ul>
+  <button class="button  button--nav" aria-label="Menu toggle">
+    <svg width="16" height="16" class="icon  icon--nav" role="img" alt="Menu"><title>Menu</title><use xlink:href="#nav" fill="CurrentColor"></use></svg>
+
+  </button>
+</nav>
+
+
+<script type="text/javascript">
+  // Get list and button
+  const navList = document.querySelector('.header .list--nav')
+  const button  = document.querySelector('.header .button--nav')
+
+  // Hide nav and apply toggle
+  const collapseNav = () => {
+    if (document.body.clientWidth < 640) {
+      navList.style.setProperty('--listHeight', `-${navList.offsetHeight}px`)
+    } else {
+      navList.removeAttribute('style')
+    }
+
+    button.onclick = () => {
+      navList.style.setProperty('transition', `margin .1s`)
+      if (navList.style.getPropertyValue('--listHeight')) {
+        navList.style.removeProperty('--listHeight')
+      } else {
+        navList.style.setProperty('--listHeight', `-${navList.offsetHeight}px`)
+      }
+    }
+  }
+
+  collapseNav()
+
+  // Check on resize if to collapse nav
+  window.addEventListener('resize', () => {
+    collapseNav()
+  })
+</script>
+
+  </div>
+
+
+
+</header>
+
+
+<main class="main_container">
+
+  <article class="article  article--page  content  typeset">
+    <h2 id="hello-world">hello world</h2>
+    <img src="/assets/JoannSongLogo.png" width="500" height="500" alt="logo" />
+
+    <p>My name's Joann. I'm an Automation Engineer and a full time grad student at USC Iovine and Young Academy.</p>
+    <p>I enjoy problem solving and dabbling in creative projects.</p>
+    <p>You can find out more about me on my <a href="/about/">about page</a>!</p>  
+
+  </article>
+
+  
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="copyright  typeset">
+      <small class="small">&copy; IDSN 599</small>
+    </div>
+
+    
+<nav class="nav  nav--footer">
+  <ul class="list list--nav">
+    
+
+      
+
+      <li class="item  item--nav">
+        <a href="/#top">Back to top</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  </div>
+</footer>
+
+
+
+    <script type="text/javascript">
+(() => {
+  const registerServiceWorker = () => {
+    if (!navigator.serviceWorker) {
+      return;
+    }
+
+    navigator.serviceWorker
+      .register("/sw.js")
+      .then(registration => {
+        console.log("Service Worker: registered");
+      })
+      .catch(err => {
+        console.log("Service Worker: registration failed ", err);
+      });
+  };
+
+  registerServiceWorker();
+})();
+</script>
+
   </body>
+
 </html>
+

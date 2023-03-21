@@ -1,21 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <img src="/public/assets/JoannSongLogo.png" width="500" height="500" alt="logo" />
         <a
-          className="App-link"
-          href="https://songjoann.github.io"
-          target="_blank"
-          rel="noopener noreferrer"
+          className="Main Page"
+          href="/public/index.html"
         >
-          Learn React
+          Enter My Website
         </a>
       </header>
     </div>
