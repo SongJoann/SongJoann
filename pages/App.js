@@ -1,4 +1,4 @@
-import './App.css';
+import "../styles/App.css";
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
         <img src="/public/assets/JoannSongLogo.png" width="500" height="500" alt="logo" />
         <a
           className="Main Page"
-          href="/public/index.html"
+          href="index.html"
         >
           Enter My Website
         </a>
